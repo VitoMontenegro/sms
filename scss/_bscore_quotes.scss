@@ -1,0 +1,63 @@
+.quotes {
+  color: #fff;
+  background: url(../img/quotes_bg_sm.jpg) center;
+  background-size: cover;
+  padding-bottom: 1px;
+  padding-top: 3rem;
+  h2 {
+    color: #fff;
+    margin-bottom: 2.3rem;
+  }
+  .item {
+    margin-bottom: 4rem;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.65px;
+    &.is_right {
+      border-left: 3px solid #FFF;
+      padding: 2.6rem 2.3rem 2.6rem 3rem;
+      margin-left: 20%;
+    }
+    &.is_left {
+      border-right: 3px solid #FFF;
+      padding: 3.8rem 1.4rem 3.7rem 1.5rem;
+      margin-right: 7%;
+      margin-left: 7%;
+    }
+  }
+  @include media-breakpoint-up(sm) {
+    background: url("../img/quotes_bg_md.jpg") center;
+    background-size: cover;
+    h2 {
+      color: #fff;
+      margin-bottom: 5rem;
+    }
+    .item {
+      font-size: 32px;
+      letter-spacing: 1.6px;
+      &.is_right {
+        padding: 3.4rem 2.9rem 3.1rem 3.4rem;
+      }
+      &.is_left {
+        padding: 3.5rem 3.5rem 2.2rem 4.4rem;
+      }
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    padding-top: 4rem;
+    background: url("../img/quotes_bg.jpg") center;
+    background-size: cover;
+    .item {
+      font-size: 40px;
+      letter-spacing: 2px;
+      &.is_right {
+        padding: 3rem 4rem;
+      }
+      &.is_left {
+        padding: 3.5rem;
+      }
+    }
+  }
+}

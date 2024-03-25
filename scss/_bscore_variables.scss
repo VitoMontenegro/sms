@@ -1,0 +1,36 @@
+// In this file you can override the default variables of Bootstrap
+// Do you want primary to be green? Just add "$primary: #00FF00;" to this file and the theme will automatically compile the scss for you.
+:root {
+  --font-family: "Jura", sans-serif;
+  --second-family: "Outline Pixel7", sans-serif;
+  --third-family: "Montserrat", sans-serif;
+}
+
+/*  FONTS LOAD SECTION  */
+@mixin font($fname, $fstyle, $fweight, $furl, $format) {
+  @font-face {
+    font-family: $fname;
+    font-style: $fstyle;
+    font-weight: $fweight;
+    src: url($furl) format($format);
+  }
+}
+
+
+
+@include font('Montserrat', normal, 300, '../assets/fonts/montserrat/Montserrat-Light.ttf', 'truetype');
+@include font('Montserrat', italic, 300, '../assets/fonts/montserrat/Montserrat-LightItalic.ttf', 'truetype');
+@include font('Montserrat', normal, 400, '../assets/fonts/montserrat/Montserrat-Regular.ttf', 'truetype');
+@include font('Montserrat', italic, 400, '../assets/fonts/montserrat/Montserrat-Italic.ttf', 'truetype');
+@include font('Montserrat', normal, 500, '../assets/fonts/montserrat/Montserrat-Medium.ttf', 'truetype');
+@include font('Montserrat', italic, 500, '../assets/fonts/montserrat/Montserrat-MediumItalic.ttf', 'truetype');
+@include font('Montserrat', normal, 600, '../assets/fonts/montserrat/Montserrat-SemiBold.ttf', 'truetype');
+@include font('Montserrat', italic, 600, '../assets/fonts/montserrat/Montserrat-SemiBoldItalic.ttf', 'truetype');
+
+@include font('Jura', normal, 300, '../assets/fonts/jura/Jura-Light.ttf', 'truetype');
+@include font('Jura', normal, 400, '../assets/fonts/jura/Jura-Regular.ttf', 'truetype');
+@include font('Jura', normal, 500, '../assets/fonts/jura/Jura-Medium.ttf', 'truetype');
+@include font('Jura', normal, 600, '../assets/fonts/jura/Jura-SemiBold.ttf', 'truetype');
+@include font('Jura', normal, 700, '../assets/fonts/jura/Jura-Bold.ttf', 'truetype');
+
+@include font('Outline Pixel7', normal, 400, '../assets/fonts/outline/outline_pixel-7.ttf', 'truetype');

@@ -1,0 +1,103 @@
+.advantages {
+  background-image: url(../img/circle.png);
+  background-position: 50% 75%;
+  background-size: 40rem;
+  background-repeat: no-repeat;
+  padding: 0 0 8rem 0;
+  margin-top: 7rem;
+  h2 {
+    background: linear-gradient(90deg, #5066C7 0%, #2FC7FE 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+  .content {
+    margin-top: 8rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, auto);
+    .item {
+      text-align: center;
+      a {
+        color: #FFF;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 100%;
+        letter-spacing: 0.05em;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        border: 1px solid #191919;
+        display: inline-block;
+        padding: 1rem;
+
+        &:hover {
+          border: 1px solid #5066C7;
+        }
+      }
+      img {
+        width: 4.2rem;
+        height: 4.2rem;
+      }
+      &:nth-child(1) {
+        grid-column: 1/5;
+      }
+      &:nth-child(2) {
+        grid-column: 8 / 13;
+      }
+      &:nth-child(3) {
+        grid-column: 4/10;
+      }
+      &:nth-child(4) {
+        grid-column: 1/5;
+      }
+      &:nth-child(5) {
+        grid-column: 9 / 13;
+      }
+    }
+  }
+  @include media-breakpoint-up(sm) {
+    background-position: 50% -65%;
+    background-size: 82rem;
+    h2 {
+      text-align: left;
+    }
+    .content {
+      margin-top: 15rem;
+      .item {
+        max-width: 35rem;
+        a {
+          font-size: 24px;
+        }
+        img {
+          width: 8.2rem;
+          height: 8.2rem;
+        }
+      }
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    background-position: 50% 27%;
+    background-size: 146rem;
+    .content {
+      margin-top: 17rem;
+      padding-bottom: 14rem;
+      .item {
+        max-width: 55rem;
+        a {
+          font-size: 40px;
+        }
+        &:nth-child(3) {
+          grid-column: 5/10;
+        }
+      }
+    }
+  }
+}
+
+.home {
+  .advantages {
+    margin-top: 0;
+  }
+}

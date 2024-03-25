@@ -1,0 +1,20 @@
+@import "bscore_variables";     
+@import "bootstrap/bootstrap";  // Collecting Bootstrap source from parent-theme
+@import "bscore_style";         // Collecting bootScore source from parent-theme
+// Comment or delete following line if WooCommerce styles are not needed
+@import "bscore_woocommerce";   // Collecting bootScore WooCommerce source from parent-theme
+@import "bscore_custom";
+@import "bscore_content";
+@import "bscore_hero";
+@import "bscore_quotes";
+@import "counter_list";
+@import "bscore_swiper";
+@import "bscore_advantages";
+@import "bscore_partners";
+@import "bscore_about";
+@import "bscore_team";
+@import "bscore_directions";
+@import "bscore_counts";
+@import "bscore_blogpage";
+@import "bscore_cases";
+@import "bscore_slider";
